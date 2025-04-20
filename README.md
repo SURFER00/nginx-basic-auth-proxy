@@ -81,7 +81,7 @@ services:
         condition: on-failure
 
   cadvisor-auth:
-    image: basic-auth-proxy:latest
+    image: ghcr.io/surfer00/nginx-basic-auth-proxy:latest
     environment:
       - BASIC_AUTH_USERNAME=admin
       - BASIC_AUTH_PASSWORD=your_secure_password

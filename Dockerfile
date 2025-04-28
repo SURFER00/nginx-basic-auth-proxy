@@ -8,6 +8,7 @@ COPY nginx.conf /etc/nginx/nginx.conf.template
 RUN chmod +x /entrypoint.sh
 
 ENV CLIENT_MAX_BODY_SIZE=1m
+ENV PROXY_READ_TIMEOUT=60s
 
 ENTRYPOINT ["/entrypoint.sh"]
 

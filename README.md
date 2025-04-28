@@ -110,12 +110,13 @@ networks:
 
 The following environment variables can be used to configure the proxy:
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `BASIC_AUTH_USERNAME` | Username for Basic Auth | (unset) |
-| `BASIC_AUTH_PASSWORD` | Password for Basic Auth | (unset) |
-| `PROXY_PASS` | URL of the service to proxy to | (unset) |
-| `CLIENT_MAX_BODY_SIZE` | Maximum allowed size of client requests | `1m` |
+| Variable | Description | Default | Required |
+|----------|-------------|---------|----------|
+| `BASIC_AUTH_USERNAME` | Username for Basic Auth | (unset) | yes
+| `BASIC_AUTH_PASSWORD` | Password for Basic Auth | (unset) | yes
+| `PROXY_PASS` | URL of the service to proxy to | (unset) | yes
+| `CLIENT_MAX_BODY_SIZE` | Maximum allowed size of client requests | `1m` | no
+| `PROXY_READ_TIMEOUT` | Defines a timeout for reading a response from the proxied server | `60s` | no
 
 ## Using with a Reverse Proxy
 

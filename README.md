@@ -27,12 +27,12 @@ This project provides a simple NGINX-based proxy that sits in front of your serv
 
 ## Features
 
-- 🔒 HTTP Basic Authentication protection for any service
-- 🔌 WebSocket support for compatible applications
-- 🐳 Minimal Docker image based on NGINX Alpine
-- ⚙️ Simple configuration via environment variables
-- 🔄 Designed for Docker Compose and Swarm environments
-- 📦 Lightweight and low resource usage
+- HTTP Basic Authentication protection for any service
+- WebSocket support for compatible applications
+- Minimal Docker image based on NGINX Alpine
+- Simple configuration via environment variables
+- Designed for Docker Compose and Swarm environments
+- Lightweight and low resource usage
 
 ## Quick Start
 

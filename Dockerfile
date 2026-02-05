@@ -1,4 +1,4 @@
-FROM nginx:1.28.1-alpine-slim
+FROM nginx:1.28.2-alpine-slim
 
 RUN apk add --no-cache apache2-utils
 

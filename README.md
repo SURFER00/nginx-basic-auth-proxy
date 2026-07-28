@@ -6,25 +6,6 @@ A lightweight Docker image that adds HTTP Basic Authentication to any web servic
 
 This project provides a simple NGINX-based proxy that sits in front of your services and requires basic authentication before allowing access. It's designed to be minimal, configurable, and easy to use in Docker environments.
 
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│                                                                     │
-│                            DOCKER STACK                             │
-│                                                                     │
-│   ┌─────────────────────────┐        ┌─────────────────────────┐    │
-│   │                         │        │                         │    │
-│   │     Basic Auth Proxy    │        │      Target Service     │    │
-│   │    (NGINX + htpasswd)   │◄──────►│   (cAdvisor, etc.)      │    │
-│   │                         │        │                         │    │
-│   └─────────────┬───────────┘        └─────────────────────────┘    │
-│                 │                                                   │
-└─────────────────┼───────────────────────────────────────────────────┘
-                  │ HTTP Basic Auth
-                  │ (BASIC_AUTH_USERNAME / BASIC_AUTH_PASSWORD)
-                  ▼
-               8080/tcp
-```
-
 ## Features
 
 - HTTP Basic Authentication protection for any service
